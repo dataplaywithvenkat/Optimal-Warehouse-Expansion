@@ -18,14 +18,15 @@ TOPSIS on the other hand is a useful technique where it ranks different availabl
 Considering the given business scenario, I have assumed the criteria weights over another in the below manner: -
 
 ![Figure 5: Normalised Decision variable matrix w.r.t Public Transport](Fig/fig1.png)
+#### Figure 1: Decomposition of criteria 
 
-Figure 1: Decomposition of criteria 
+
 
 The weights are assumed in such a way that Warehouse space is of extreme importance and Public transport being the least one. After determining the relative importance of each decision criteria I assumed a number from the Saaty scale based on the judgement and developed a comparison matrix (Figure 2). 
 
 ![Figure 2:](Fig/fig2.png)
 
-Figure 2: Comparison matrix of decision criteria
+#### Figure 2: Comparison matrix of decision criteria
 
 # AHP Methodology
 
@@ -34,10 +35,12 @@ AHP calculations can be carried out using principal eigenvector or geometric mea
 In 1st step, the sum is calculated for each row of the comparison matrix determined above. Then the summed row is normalised. This method is repeated until the normalised value in consecutive calculations remains the same. 
 
 ![Figure 3:](Fig/fig3.png)
-Figure 3: Normalised Criteria comparison matrix 
+
+#### Figure 3: Normalised Criteria comparison matrix 
 
 ![Figure 4:](Fig/fig4.png)
-Figure 4: Bar Chart of Criteria weights
+
+#### Figure 4: Bar Chart of Criteria weights
 
 The above bar chart clearly shows the relative importance of each criterion over the other.
 
@@ -45,23 +48,23 @@ Similarly, from the 2nd step onwards each decision variable or alternative is ev
 
 ![Figure 5: Normalised Decision variable matrix w.r.t Public Transport](Fig/fig5.png)
 
-Figure 5:  Normalised Decision variable matrix w.r.t Public Transport
+#### Figure 5:  Normalised Decision variable matrix w.r.t Public Transport
 
 ![Figure 6: Normalised Decision variable matrix w.r.t Ease of Parking](Fig/fig6.png)
 
-Figure 6:  Normalised Decision variable matrix w.r.t Ease of Parking
+#### Figure 6:  Normalised Decision variable matrix w.r.t Ease of Parking
 
 ![Figure 7: Normalised Decision variable matrix w.r.t Warehouse space](Fig/fig7.png)
 
-Figure 7:  Normalised Decision variable matrix w.r.t Warehouse space
+#### Figure 7:  Normalised Decision variable matrix w.r.t Warehouse space
 
 ![Figure 8: Normalised Decision variable matrix w.r.t Security](Fig/fig8.png)
 
-Figure 8:  Normalised Decision variable matrix w.r.t Security
+#### Figure 8:  Normalised Decision variable matrix w.r.t Security
 
 ![Figure 9: Normalised Decision variable matrix w.r.t Cost](Fig/fig9.png)
 
-Figure 9:  Normalised Decision variable matrix w.r.t Cost
+#### Figure 9:  Normalised Decision variable matrix w.r.t Cost
 
 In Figure 9, the cost is a quantitative criterion and a minimizing attribute because a company would always want a minimum purchase cost. So, in this case, I reciprocated the cost of the individual alternative and then normalised the value.
 
@@ -69,59 +72,59 @@ In Figure 9, the cost is a quantitative criterion and a minimizing attribute bec
 
 ![Figure 10:](Fig/fig10.png)
 
-**Figure 10: Final AHP weights, score**
+#### Figure 10: Final AHP weights, score
 
 ![Figure 11:](Fig/fig11.png)
 
-**Figure 11: Bar chart of AHP result**
+#### Figure 11: Bar chart of AHP result
 
-**TOPSIS Methodology**
+# TOPSIS Methodology
 
 In TOPSIS, I have used the same weights of decision criteria as determined in AHP (Figure-4).  In Step 1, the Saaty scale is used to determine a score for each qualitative attribute and then normalised the decision matrix using the vector normalisation method where Xij is the score of alternative i wrt criterion j.
 
 ![Figure 12: Qualitative to Quantitative score](Fig/fig12.png)
 
-Figure 12: Qualitative to Quantitative score  
+#### Figure 12: Qualitative to Quantitative score  
 
 In Step 2, each cell value is divided with the corresponding Rij value to normalise(figure 13).
 
 ![Figure 13: Normalised value for each criterion](Fig/fig13.png)
 
-Figure 13: Normalised value for each criterion
+#### Figure 13: Normalised value for each criterion
 
 In Step 3, Multiplied the weights with each normalised value of its corresponding cell (Figure 14).
 
 ![Figure 14: Weighted Normalised matrix](Fig/fig14.png)
 
-Figure 14: Weighted Normalised matrix 
+#### Figure 14: Weighted Normalised matrix 
 
 In Step 4, I have determined the orientation of the criteria- C1, C2, C3, C4 as maximizing and C5 as minimizing. Then I have identified the Positive Ideal solution(PIS) and Negative Ideal Solution (NIS) for each criteria. PIS in GREEN and NIS in RED (Fig/fig5.png).
 
 ![Figure 15: PIS & NIS](Fig/fig15.png)
 
-Figure 15: PIS & NIS 
+#### Figure 15: PIS & NIS 
 
 In Step 5, Calculated the distance between each alternative score and PIS (Vij-Vj*)  of a given criterion (Figure 16). 
 
 ![Figure 16: Euclidean distance from PIS](Fig/fig16.png)
 
-Figure 16: Euclidean distance from PIS
+#### Figure 16: Euclidean distance from PIS
 
 Similarly, Calculated the distance between each alternative score and NIS (Vij-Vj-)  of a given criterion (Figure 17).
 
 ![Figure 17: Euclidean distance from NIS](Fig/fig17.png)
 
-Figure 17: Euclidean distance from NIS
+#### Figure 17: Euclidean distance from NIS
 
 **Result** –  In figure 4, we can see that A2(Suburb)is the best solution as it tends closest to 1 whereas A1(centre) is the worst solution as it tends to be 0. 
 
 ![Figure 18: Euclidean distance from NIS](Fig/fig18.png)
 
-**Figure 18: TOPSIS final bar chart**
+#### Figure 18: TOPSIS final bar chart
 
-**Response to Company**
+# Response to Company
 
-**Technical Details of Result**
+## Technical Details of Result
 
 I reached the conclusion using the relative importance of the decision criteria as **C3 > C2 > C4 > C5 > C1** based on the following assumption:
 
@@ -137,7 +140,7 @@ I reached the conclusion using the relative importance of the decision criteria 
 
 Resting on the above assumption, I made a comparison matrix using the Saaty scale which further helped me in analysing the given data. MCDM methods like AHP and TOPSIS brought out the optimum solution as A2(Suburb) to acquire space.
 
-**Proposed way forward plan**
+## Proposed way forward plan
 
 A2(Suburb) is the most efficient location to acquire space. We now need to devise a brief implementation plan to carry out the decision. I have divided it into 4 phases:
 
@@ -148,6 +151,6 @@ A2(Suburb) is the most efficient location to acquire space. We now need to devis
 
 One incorrect or mismanaged step during the whole process may lead to economic discomfort and functional imbalances for a company. So, proper implementation of the decision is equally important as identifying an optimum solution.
 
-**Conclusion**
+# Conclusion
 
 In today’s fast-paced business world there are a lot of factors influencing a decision. The biggest challenge is to handle these constraints on one hand and reaching to an optimum solution on the other hand. MCDM techniques such as AHP, TOPSIS helps to tackle these types of problems where many stakeholders come into the picture to play their part in the whole process. For the given business scenario, A2(Suburb) has risen as a prominent solution align with the assumptions taken.
