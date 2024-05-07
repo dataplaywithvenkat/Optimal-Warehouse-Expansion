@@ -1,3 +1,7 @@
+<div style="background-color: white;">
+
+<
+
 # Optimal-Warehouse-Expansion
 
 # Introduction
@@ -112,3 +116,7 @@ One incorrect or mismanaged step during the whole process may lead to economic d
 **Conclusion**
 
 In today’s fast-paced business world there are a lot of factors influencing a decision. The biggest challenge is to handle these constraints on one hand and reaching to an optimum solution on the other hand. MCDM techniques such as AHP, TOPSIS helps to tackle these types of problems where many stakeholders come into the picture to play their part in the whole process. For the given business scenario, A2(Suburb) has risen as a prominent solution align with the assumptions taken.
+
+>
+
+</div>
