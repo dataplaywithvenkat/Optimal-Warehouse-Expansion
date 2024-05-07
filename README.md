@@ -32,7 +32,7 @@ The above bar chart clearly shows the relative importance of each criterion over
 
 Similarly, from the 2nd step onwards each decision variable or alternative is evaluated among themselves based on the conditions or scenario given of each criterion until normalised values remain the same as previous calculation. This can be calculated using the principal eigenvector or geometric mean.
 
-![Figure 5: Normalised Decision variable matrix w.r.t Public Transport](link_to_image_5)
+![Figure 5: Normalised Decision variable matrix w.r.t Public Transport](Fig/fig5)
 
 ![Figure 6: Normalised Decision variable matrix w.r.t Ease of Parking](link_to_image_6)
 
