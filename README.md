@@ -1,7 +1,3 @@
-<div style="background-color: white;">
-
-<
-
 # Optimal-Warehouse-Expansion
 
 # Introduction
@@ -38,13 +34,13 @@ Similarly, from the 2nd step onwards each decision variable or alternative is ev
 
 ![Figure 5: Normalised Decision variable matrix w.r.t Public Transport](Fig/fig5.png)
 
-![Figure 6: Normalised Decision variable matrix w.r.t Ease of Parking](link_to_image_6)
+![Figure 6: Normalised Decision variable matrix w.r.t Ease of Parking](Fig/fig6.png)
 
-![Figure 7: Normalised Decision variable matrix w.r.t Warehouse space](link_to_image_7)
+![Figure 7: Normalised Decision variable matrix w.r.t Warehouse space](Fig/fig7.png)
 
-![Figure 8: Normalised Decision variable matrix w.r.t Security](link_to_image_8)
+![Figure 8: Normalised Decision variable matrix w.r.t Security](Fig/fig8.png)
 
-![Figure 9: Normalised Decision variable matrix w.r.t Cost](link_to_image_9)
+![Figure 9: Normalised Decision variable matrix w.r.t Cost](Fig/fig9.png)
 
 In Figure 9, the cost is a quantitative criterion and a minimizing attribute because a company would always want a minimum purchase cost. So, in this case, I reciprocated the cost of the individual alternative and then normalised the value.
 
@@ -58,27 +54,27 @@ In Figure 9, the cost is a quantitative criterion and a minimizing attribute bec
 
 In TOPSIS, I have used the same weights of decision criteria as determined in AHP (Figure-4).  In Step 1, the Saaty scale is used to determine a score for each qualitative attribute and then normalised the decision matrix using the vector normalisation method where Xij is the score of alternative i wrt criterion j.
 
-![Figure 12: Qualitative to Quantitative score](link_to_image_12)
+![Figure 12: Qualitative to Quantitative score](Fig/fig12.png)
 
 In Step 2, each cell value is divided with the corresponding Rij value to normalise(figure 13).
 
-![Figure 13: Normalised value for each criterion](link_to_image_13)
+![Figure 13: Normalised value for each criterion](Fig/fig13.png)
 
 In Step 3, Multiplied the weights with each normalised value of its corresponding cell (Figure 14).
 
-![Figure 14: Weighted Normalised matrix](link_to_image_14)
+![Figure 14: Weighted Normalised matrix](Fig/fig14.png)
 
-In Step 4, I have determined the orientation of the criteria- C1, C2, C3, C4 as maximizing and C5 as minimizing. Then I have identified the Positive Ideal solution(PIS) and Negative Ideal Solution (NIS) for each criteria. PIS in GREEN and NIS in RED (Figure 15).
+In Step 4, I have determined the orientation of the criteria- C1, C2, C3, C4 as maximizing and C5 as minimizing. Then I have identified the Positive Ideal solution(PIS) and Negative Ideal Solution (NIS) for each criteria. PIS in GREEN and NIS in RED (Fig/fig5.png).
 
-![Figure 15: PIS & NIS](link_to_image_15)
+![Figure 15: PIS & NIS](Fig/fig15.png)
 
 In Step 5, Calculated the distance between each alternative score and PIS (Vij-Vj*)  of a given criterion (Figure 16). 
 
-![Figure 16: Euclidean distance from PIS](link_to_image_16)
+![Figure 16: Euclidean distance from PIS](Fig/fig16.png)
 
 Similarly, Calculated the distance between each alternative score and NIS (Vij-Vj-)  of a given criterion (Figure 17).
 
-![Figure 17: Euclidean distance from NIS](link_to_image_17)
+![Figure 17: Euclidean distance from NIS](Fig/fig17.png)
 
 **Result** –  In figure 4, we can see that A2(Suburb)is the best solution as it tends closest to 1 whereas A1(centre) is the worst solution as it tends to be 0. 
 
@@ -116,7 +112,3 @@ One incorrect or mismanaged step during the whole process may lead to economic d
 **Conclusion**
 
 In today’s fast-paced business world there are a lot of factors influencing a decision. The biggest challenge is to handle these constraints on one hand and reaching to an optimum solution on the other hand. MCDM techniques such as AHP, TOPSIS helps to tackle these types of problems where many stakeholders come into the picture to play their part in the whole process. For the given business scenario, A2(Suburb) has risen as a prominent solution align with the assumptions taken.
-
->
-
-</div>
