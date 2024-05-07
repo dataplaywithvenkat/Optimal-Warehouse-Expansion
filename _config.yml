@@ -1,5 +1,3 @@
-remote_theme: lewismiddleton/cayman-dark
+remote_theme: minima
 title: Optimal Warehouse Expansion
 description: The following project constitutes a component of my coursework in Business Analytics and Decision Science. Employing Multi-Criteria Decision Analysis techniques, namely Analytic Hierarchy Process (AHP) and Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS), I have conducted an analysis aimed at identifying optimal expansion strategies.
-gems:
-  - jekyll-coffeescript
