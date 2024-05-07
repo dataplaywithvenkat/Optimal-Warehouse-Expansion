@@ -1,4 +1,4 @@
-**Project by: Venkat Polamuri - [Linkedin](https://www.linkedin.com/in/venkatpolamuri/)**
+**Project by : Venkat Polamuri - [Linkedin](https://www.linkedin.com/in/venkatpolamuri/)**
 
 # Introduction
 
