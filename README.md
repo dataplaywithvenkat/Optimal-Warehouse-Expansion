@@ -17,8 +17,15 @@ TOPSIS on the other hand is a useful technique where it ranks different availabl
 
 Considering the given business scenario, I have assumed the criteria weights over another in the below manner: -
 
+![Figure 5: Normalised Decision variable matrix w.r.t Public Transport](Fig/fig1.png)
+
+Figure 1: Decomposition of criteria 
 
 The weights are assumed in such a way that Warehouse space is of extreme importance and Public transport being the least one. After determining the relative importance of each decision criteria I assumed a number from the Saaty scale based on the judgement and developed a comparison matrix (Figure 2). 
+
+![Figure 2:](Fig/fig2.png)
+
+Figure 2: Comparison matrix of decision criteria
 
 # AHP Methodology
 
@@ -26,7 +33,11 @@ AHP calculations can be carried out using principal eigenvector or geometric mea
 
 In 1st step, the sum is calculated for each row of the comparison matrix determined above. Then the summed row is normalised. This method is repeated until the normalised value in consecutive calculations remains the same. 
 
-# Multi-Criteria Decision Making Analysis
+![Figure 3:](Fig/fig3.png)
+Figure 3: Normalised Criteria comparison matrix 
+
+![Figure 4:](Fig/fig4.png)
+Figure 4: Bar Chart of Criteria weights
 
 The above bar chart clearly shows the relative importance of each criterion over the other.
 
@@ -34,19 +45,33 @@ Similarly, from the 2nd step onwards each decision variable or alternative is ev
 
 ![Figure 5: Normalised Decision variable matrix w.r.t Public Transport](Fig/fig5.png)
 
+Figure 5:  Normalised Decision variable matrix w.r.t Public Transport
+
 ![Figure 6: Normalised Decision variable matrix w.r.t Ease of Parking](Fig/fig6.png)
+
+Figure 6:  Normalised Decision variable matrix w.r.t Ease of Parking
 
 ![Figure 7: Normalised Decision variable matrix w.r.t Warehouse space](Fig/fig7.png)
 
+Figure 7:  Normalised Decision variable matrix w.r.t Warehouse space
+
 ![Figure 8: Normalised Decision variable matrix w.r.t Security](Fig/fig8.png)
 
+Figure 8:  Normalised Decision variable matrix w.r.t Security
+
 ![Figure 9: Normalised Decision variable matrix w.r.t Cost](Fig/fig9.png)
+
+Figure 9:  Normalised Decision variable matrix w.r.t Cost
 
 In Figure 9, the cost is a quantitative criterion and a minimizing attribute because a company would always want a minimum purchase cost. So, in this case, I reciprocated the cost of the individual alternative and then normalised the value.
 
 **Result** - In the last step, I combined all the decision variables matrix value w.r.t each criterion and generate a score by multiplying it with individual weights of the criteria determined earlier (as shown in figure-3). We can see that A2(suburb) has the maximum score compared to others and the company should opt for it. Figure-11 clearly shows the score difference through a bar chart.
 
+![Figure 10:](Fig/fig10.png)
+
 **Figure 10: Final AHP weights, score**
+
+![Figure 11:](Fig/fig11.png)
 
 **Figure 11: Bar chart of AHP result**
 
@@ -56,27 +81,41 @@ In TOPSIS, I have used the same weights of decision criteria as determined in AH
 
 ![Figure 12: Qualitative to Quantitative score](Fig/fig12.png)
 
+Figure 12: Qualitative to Quantitative score  
+
 In Step 2, each cell value is divided with the corresponding Rij value to normalise(figure 13).
 
 ![Figure 13: Normalised value for each criterion](Fig/fig13.png)
+
+Figure 13: Normalised value for each criterion
 
 In Step 3, Multiplied the weights with each normalised value of its corresponding cell (Figure 14).
 
 ![Figure 14: Weighted Normalised matrix](Fig/fig14.png)
 
+Figure 14: Weighted Normalised matrix 
+
 In Step 4, I have determined the orientation of the criteria- C1, C2, C3, C4 as maximizing and C5 as minimizing. Then I have identified the Positive Ideal solution(PIS) and Negative Ideal Solution (NIS) for each criteria. PIS in GREEN and NIS in RED (Fig/fig5.png).
 
 ![Figure 15: PIS & NIS](Fig/fig15.png)
+
+Figure 15: PIS & NIS 
 
 In Step 5, Calculated the distance between each alternative score and PIS (Vij-Vj*)  of a given criterion (Figure 16). 
 
 ![Figure 16: Euclidean distance from PIS](Fig/fig16.png)
 
+Figure 16: Euclidean distance from PIS
+
 Similarly, Calculated the distance between each alternative score and NIS (Vij-Vj-)  of a given criterion (Figure 17).
 
 ![Figure 17: Euclidean distance from NIS](Fig/fig17.png)
 
+Figure 17: Euclidean distance from NIS
+
 **Result** –  In figure 4, we can see that A2(Suburb)is the best solution as it tends closest to 1 whereas A1(centre) is the worst solution as it tends to be 0. 
+
+![Figure 18: Euclidean distance from NIS](Fig/fig18.png)
 
 **Figure 18: TOPSIS final bar chart**
 
@@ -84,17 +123,17 @@ Similarly, Calculated the distance between each alternative score and NIS (Vij-V
 
 **Technical Details of Result**
 
-I reached the conclusion using the relative importance of the decision criteria as C3 > C2 > C4 > C5 > C1 based on the following assumption:
+I reached the conclusion using the relative importance of the decision criteria as **C3 > C2 > C4 > C5 > C1** based on the following assumption:
 
-a)I have assumed C3-Warehouse space to be most important because the company is expanding its business and for them, the main priority is the availability of space where they can store their raw materials, park their forklifts, finish products, waste by-products etc. They need office space, canteens to accommodate more staff. Lengthy conveyor belts are needed to sort the finished products and pack the items in case of the retail or parcel industry.
+- I have assumed **C3-Warehouse** space to be most important because the company is expanding its business and for them, the main priority is the availability of space where they can store their raw materials, park their forklifts, finish products, waste by-products etc. They need office space, canteens to accommodate more staff. Lengthy conveyor belts are needed to sort the finished products and pack the items in case of the retail or parcel industry.
 
-b)I have considered C2-Parking as the 2nd most effective criteria as the company are expanding their Warehouse capacity they would need more parking space to park their number of Movable trucks such as Box trucks, heavy-duty trucks etc and also facilitate their ease of movements. As the number of staff is increasing, they will need a large area to accommodate a greater number of cars, bikes.
+- I have considered **C2-Parking** as the 2nd most effective criteria as the company are expanding their Warehouse capacity they would need more parking space to park their number of Movable trucks such as Box trucks, heavy-duty trucks etc and also facilitate their ease of movements. As the number of staff is increasing, they will need a large area to accommodate a greater number of cars, bikes.
 
-c)C4-Security comes 3rd in the list to minimize the number of thefts and burglary as there might be many valuable raw materials or finished products like mobile phones, car parts, expensive jewellery or apparel etc. They do also need to keep their employees/staff safe at work.
+- **C4-Security** comes 3rd in the list to minimize the number of thefts and burglary as there might be many valuable raw materials or finished products like mobile phones, car parts, expensive jewellery or apparel etc. They do also need to keep their employees/staff safe at work.
 
-d)C5-Cost comes second last in the list. I think a purchase cost is a one-time investment that can be recovered within a period of time by providing the business with a proper environment to function and earn profits.  Any land or warehouse area purchased will be an asset to a company and will boost its market value in the coming days.
+- **C5-Cost** comes second last in the list. I think a purchase cost is a one-time investment that can be recovered within a period of time by providing the business with a proper environment to function and earn profits.  Any land or warehouse area purchased will be an asset to a company and will boost its market value in the coming days.
 
-e)C1-Public Transport is the least important criterion. According to me, labour and staff can easily move to the warehouse from the company provided passenger vehicles instead of public transport and can be a benefit for employees/workers. The goods and raw material generally move in and out directly from the warehouse in company-owned vehicles or third part logistical support. 
+- **C1-Public** Transport is the least important criterion. According to me, labour and staff can easily move to the warehouse from the company provided passenger vehicles instead of public transport and can be a benefit for employees/workers. The goods and raw material generally move in and out directly from the warehouse in company-owned vehicles or third part logistical support. 
 
 Resting on the above assumption, I made a comparison matrix using the Saaty scale which further helped me in analysing the given data. MCDM methods like AHP and TOPSIS brought out the optimum solution as A2(Suburb) to acquire space.
 
